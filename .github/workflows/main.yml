@@ -16,5 +16,5 @@ jobs:
         heroku_app_name: "full-stack-open-pokemon"
         heroku_email: "tikker.laura@gmail.com"
         healthcheck: "https://full-stack-open-pokemon.herokuapp.com/health"
-        checkstring: "ok"
+        checkstring: "wrong string"
         delay: 5
