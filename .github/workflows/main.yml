@@ -18,3 +18,4 @@ jobs:
         healthcheck: "https://full-stack-open-pokemon.herokuapp.com/health"
         checkstring: "ok"
         delay: 5
+        rollbackonhealthcheckfailed: true
