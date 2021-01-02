@@ -26,8 +26,8 @@ jobs:
       run: echo "$COMMIT_MESSAGES"
     - name: echo something
       env:
-        COMMIT_MESSAGESE: ${{ contains(github.event.commits.*.message[0], '#skip') }}
-      run: echo "$COMMIT_MESSAGESE"
+        COMMIT_MESSAGESE: ${{ contains(toJson(github.event.commits.*.message), '#skip') }}
+      run: echo "$COMMIT_MESSAGES"
     # - uses: actions/setup-node@v1
     #   with:          
     #     node-version: '12.x'
